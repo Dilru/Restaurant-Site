@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cheng China Restaurant</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  </head>
+<body>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="pull-left visible-md visible-lg">
+            <div id="logo-img"></div>
+          </a>
+
+          <div class="navbar-brand">
+            <a href="index.html"><h1>Cheng China Restaurant</h1></a>
+            <p>
+              <img src="images/star-k-logo.png" alt="Kosher certification">
+              <span>Kosher Certified</span>
+            </p>
+          </div>
+          <!-- button for mobile view (opens up and closes the collapsed mobile menu) -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <!-- Menu item --> 
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+           <!-- 'navbar-right' class is very similar to 'pull-right' class. -->
+            <li class="visible-xs">  
+              <a href="index.html">
+                <span class="glyphicon glyphicon-home"></span><br class="hidden-xs"> Home</a>
+                <!-- 'glyphicon glyphicon-home' classes able to bring in what's called an icon font.  -->
+            </li>
+            <li>
+              <a href="menu-categories.html">
+                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
+                <!-- 'glyphicon glyphicon-cutlery' will give a fork and a knife in a image.
+                '<br class="hidden-xs">' means break to go away when the screen size is extra small. -->
+
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards</a>
+            </li>
+            <li id="phone" class="hidden-xs">
+            <!-- 'tel:+9477-6292112' is if actually somebody clicks on it or taps on it they will trigger the phone to try to call it.  -->
+              <a href="tel:+9477-6292112">
+                <span>+9477-6292112</span></a>
+                <div>* We Deliver</div>
+            </li>
+          </ul><!-- #n av-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
+
+  <div id="call-btn" class="visible-xs">
+    <a class="btn" href="tel:+9477-6292112">
+    <span class="glyphicon glyphicon-earphone"></span>
+    +9477-6292112
+    </a> 
+  </div>
+  <div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
+
+  <div id="main-content" class="container">
+    
+    <div class="jumbotron">
+      <!-- Main image  of home page -->
+      <img src="images/jumbotron_768.jpg" alt="Picture of restaurant" class="img-responsive visible-xs">
+      <!-- class "img-responsive" comes from Bootstrap. when change the width of browser, the width and the sizing of the images is going to change proportionally -->
+    </div>
+
+    <div id="home-tiles" class="row">
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <a href="menu-categories.html"><div id="menu-tile"><span>menu</span></div></a>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <a href="single-category.html"><div id="specials-tile"><span>specials</span></div></a>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <a href="https://www.google.lk/maps/place/Pizza+Hut/@6.8055114,79.9192529,17z/data=!3m1!4b1!4m5!3m4!1s0x3ae24ff830cf18e5:0xe259f7b8cb1261f7!8m2!3d6.8055061!4d79.9214416?hl=en" target="_blank">
+        <!-- target="_blank" to open new window -->
+          <div id="map-tile">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.721281724652!2d79.9196820676366!3d6.803721673734725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae24ff830cf18e5%3A0xe259f7b8cb1261f7!2sPizza+Hut!5e0!3m2!1sen!2slk!4v1481781970635" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <span>map</span>
+          </div>
+        </a>
+      </div>
+    </div><!-- End of #home-tiles -->
+  </div><!-- End of #main-content -->
+
+  <footer class="panel-footer">
+    <div class="container">
+      <div class="row">
+        <section id="hours" class="col-sm-4">
+          <span>Hours:</span><br>
+          Mon - Fri: 10:00am - 8:00pm<br>
+          Sat - Sun: 09:30am - 8:30pm<br>
+          <hr class="visible-xs">
+          <!-- HR is only going to show up when the screen size is extra small. -->
+        </section>
+        <section id="address" class="col-sm-4">
+          <span>Address:</span><br>
+          No:201, Horana Road,<br>
+          Piliyandala.
+          <p>* Delivery area within 3-4 kilo meters, with minimum order of Rs.2500.00 plus Rs.500.00 charge for all deliveries.</p>
+          <hr class="visible-xs">
+        </section>
+        <section id="testimonials" class="col-sm-4">
+          <p>"The best Chinese restaurant I've been to! And that's saying a lot, since I've been to many!"</p>
+          <p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
+        </section>
+      </div>
+      <div class="text-center">&copy; Copyright Cheng China Restaurant 2016</div>
+    </div>
+  </footer>
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
